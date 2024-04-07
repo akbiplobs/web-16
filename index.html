@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A K Biplob</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="logo.png" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li><a href="#">Game Controllers</a></li>
+            <li><a href="#">VR Accessories</a></li>
+            <li><a href="#">Media Remotes</a></li>
+            <li><a href="#">Others</a></li>
+          </ul>
+        </nav>
+        <img src="menu.png" class="menu_icon" onclick="togglemenu()" />
+      </div>
+
+      <div class="row">
+        <div class="col-1">
+          <h2>
+            PS4 V2 <br />
+            Dualshock 
+          </h2>
+          <h3>Wireless Controller for Playstation 4</h3>
+          <p>(Compatible/Generic)</p>
+          <h4>$32.50</h4>
+          <button type="button">Buy Now <img src="arrow.png" /></button>
+        </div>
+        <div class="col-2">
+          <img src="controller.png" class="controller" />
+          <div class="color_box"></div>
+          <div class="add_btn">
+            <img src="add.png" />
+            <p><small>Add To Cart</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social_links">
+        <img src="fb.png" />
+        <img src="tw.png" />
+        <img src="ig.png" />
+      </div>
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px"
+
+      function togglemenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+          menuList.style.maxHeight = "130px";
+        }
+        else{
+          menuList.style.maxHeight = "0px"
+        }
+      }
+
+    </script>
+
+
+  </body>
+</html>
